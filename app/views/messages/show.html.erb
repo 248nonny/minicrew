@@ -1,0 +1,15 @@
+<p>
+  <strong>Title:</strong>
+  <%=@message.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%=@message.text %>
+</p>
+
+<%= link_to'Back', messages_path %>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
+
