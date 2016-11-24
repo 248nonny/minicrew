@@ -39,6 +39,6 @@ class MessagesController < ApplicationController
 
 	private
 	def message_params
-		params.require(:message).permit(:title,:text)
+		params.require(:message).permit(:title,:text,:minicrewan_title,:minicrewan_message)
 	end
 end

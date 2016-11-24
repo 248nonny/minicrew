@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   resources :messages
+  resources :translations
 
   root 'welcome#index'
 

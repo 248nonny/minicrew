@@ -8,6 +8,16 @@
   <%=@message.text %>
 </p>
 
+<p>
+  <strong>MiniTitle:</strong>
+  <%=@message.minicrewan_title %>
+</p>
+ 
+<p>
+  <strong>MiniText:</strong>
+  <%=@message.minicrewan_message %>
+</p>
+
 <%= link_to'Back', messages_path %>
 
 <%= link_to 'Edit', edit_message_path(@message) %> |
