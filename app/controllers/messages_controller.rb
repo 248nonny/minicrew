@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+	http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
 
 	def index
 		@messages = Message.all
@@ -36,6 +37,9 @@ class MessagesController < ApplicationController
 		@message = Message.find(params[:id])
 	end	
 
+	def destroy
+		@message = Message.find(params[:id]).destroy
+	end
 
 	private
 	def message_params
